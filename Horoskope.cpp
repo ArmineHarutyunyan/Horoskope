@@ -7,6 +7,9 @@ namespace goroskop
 {
     const std::vector<std::string> chinZodiac = {"monkey", "rooster", "dog", "roar", "rat", "ox", "tiger", "rabbit", "dragon", "snake", "horse", "goat"};
     const std::vector<std::string> zodiac = {"aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"};
+	
+
+	Person::Person(std::string f, std::string l, unsigned int y, unsigned int m, unsigned int d):firstName(f), lastName(l), year(y), month(m), day(d){}
 
     void Person::findChinZodiac()
     {
