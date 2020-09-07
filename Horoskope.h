@@ -1,13 +1,11 @@
 #pragma once
 
-
-
 namespace goroskop
 {
 	class Person
 	{
 		public:
-			Person(std::string f, std::string l, unsigned int y, unsigned int m, unsigned int d):firstName(f), lastName(l), year(y), month(m), day(d){}
+			Person(std::string f, std::string l, unsigned int y, unsigned int m, unsigned int d);
 			
 			void findChinZodiac();
 			void findZodiac();
