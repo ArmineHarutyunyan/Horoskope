@@ -7,14 +7,14 @@ namespace goroskop
 		public:
 			Person(std::string f, std::string l, unsigned int y, unsigned int m, unsigned int d);
 			
-			void findChinZodiac();
-			void findZodiac();
+			void findChinZodiac() const;
+			void findZodiac() const;
 
 		private:
-			std::string firstName{};
-			std::string lastName{};
-			unsigned int year{};
-			unsigned int month{};
-			unsigned int day{};
+			const std::string firstName{};
+			const std::string lastName{};
+			const unsigned int year{};
+			const unsigned int month{};
+			const unsigned int day{};
 	};
 }
