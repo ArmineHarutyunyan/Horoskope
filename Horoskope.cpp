@@ -11,14 +11,14 @@ namespace goroskop
 
 	Person::Person(std::string f, std::string l, unsigned int y, unsigned int m, unsigned int d):firstName(f), lastName(l), year(y), month(m), day(d){}
 
-    void Person::findChinZodiac()
+    void Person::findChinZodiac() const
     {
         int index = year % 12;
         std::cout << chinZodiac[index] << ", ";
     }
 
-    void Person::findZodiac()
-    {
+    void Person::findZodiac() const
+	{
         if((month == 3 && day >= 21) || (month == 4 && day <= 20))
             std::cout << zodiac[0];
         else if((month == 4 && day >= 21) || (month == 5 && day <= 21))
